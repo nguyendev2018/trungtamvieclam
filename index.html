@@ -12,11 +12,10 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
   <body>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
+    <div class="overlay-black"></div>
+    <div  class="modal" id="myModal">
           <span class="close">&times;</span>
           <img src="public/images/modal.png" class="modal-img" alt="modal">
-      </div>
     </div>
     <div class="header">
       <!-- <div class="header-main header-marquee header-spacing">
@@ -71,8 +70,8 @@
       <div class="header-bottom container">
         <a class="header-bottom__logo">
           <img
-            src="public/images/header-bottom/ttcvvllogo.png"
-            alt="Trung Tâm Việc Làm Bình Dương" title="TRUNG TÂM VIỆC LÀM BÌNH DƯƠNG"
+            src="public/images/Logo.png"
+            alt="Trung Tâm Dịch Vụ Việc Làm Bình Dương" title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG"
           />
         </a>
         <div class="list-menu">
@@ -80,13 +79,21 @@
             <div class="toggle_bars"></div>
           </div>
           <div class="list-menu__dirc">
+            <div class="list-menu__item--header">
+              <i class="bi bi-x-lg "></i>
+              <a href="#">
+                <img src="public/images/Logo.png" title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG" alt="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG">
+              </a>
+          
+            </div>
             <a class="list-menu__item" href="/Home">
               <img
                 src="public/images/header-bottom/icon-home.png"
                 class="icon-navbar"
                 alt="Trang Chủ"
               />
-              <span>Trang Chủ</span>
+              <i class="bi bi-chevron-right"></i>
+              Trang Chủ
             </a>
             <a class="list-menu__item" href="/Ung-Vien" id="CanMenu">
               <img
@@ -94,7 +101,8 @@
                 class="icon-navbar"
                 alt="Người Tìm Việc"
               />
-              <span>Người Tìm Việc</span>
+              <i class="bi bi-chevron-right"></i>
+              Người Tìm Việc
             </a>
             <a class="list-menu__item" href="/Gioi-Thieu">
               <img
@@ -102,7 +110,8 @@
                 class="icon-navbar"
                 alt="Giới Thiệu"
               />
-              <span>Giới Thiệu</span>
+              <i class="bi bi-chevron-right"></i>
+              Giới Thiệu
             </a>
             <a class="list-menu__item" href="/Tuyen-Dung" id="JobMenu">
               <img
@@ -110,7 +119,8 @@
                 class="icon-navbar"
                 alt="Tuyển Dụng"
               />
-              <span>Tuyển Dụng</span>
+              <i class="bi bi-chevron-right"></i>
+              Tuyển Dụng
             </a>
             <a
               class="list-menu__item"
@@ -121,7 +131,8 @@
                 class="icon-navbar"
                 alt="Sàn Oline"
               />
-              <span>Sàn Online</span>
+              <i class="bi bi-chevron-right"></i>
+              Sàn Online
             </a>
             <a class="list-menu__item" href="/Van-Ban">
               <img
@@ -129,7 +140,8 @@
                 class="icon-navbar"
                 alt="Văn Bản"
               />
-              <span>Văn Bản</span>
+              <i class="bi bi-chevron-right"></i>
+              Văn Bản
             </a>
             <a class="list-menu__item" href="/News/NewsByCategory/3330">
               <img
@@ -137,7 +149,8 @@
                 class="icon-navbar"
                 alt="TT Hành Chính"
               />
-              <span>TT Hành Chính</span>
+              <i class="bi bi-chevron-right"></i>
+              TT Hành Chính
             </a>
             <a class="list-menu__item" href="/Tin-Tuc" id="NewsMenu">
               <img
@@ -145,21 +158,24 @@
                 alt="Tin Tức"
                 class="icon-navbar"
               />
-              <span>Tin Tức</span>
+              <i class="bi bi-chevron-right"></i>
+              Tin Tức
             </a>
             <a
               class="list-menu__item list-menu__item--sign"
               href="/Tin-Tuc"
               id="NewsMenu"
             >
-              <span>Đăng nhập</span>
+            <i class="bi bi-chevron-right"></i>
+              Đăng nhập
             </a>
             <a
               class="list-menu__item list-menu__item--sign"
               href="/Tin-Tuc"
               id="NewsMenu"
             >
-              <span>Đăng ký</span>
+            <i class="bi bi-chevron-right"></i>
+              Đăng ký
             </a>
           </div>
         </div>
@@ -174,7 +190,7 @@
                   <i>Sàn Giao Dịch Việc Làm Tại Bình Dương</i>
                 </h2>
               </div>
-              <div class="header-search__listItem header-search__listItemRight">
+              <div class="header-search__listItem">
                 <div class="description">
                   <div class="description__top">
                     <div class="description__title">
@@ -427,7 +443,7 @@
                   </div>
                 </div>
               </div>
-            </form>
+              </div>
         </div>
       </div>
     </div>
