@@ -12,6 +12,12 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
   <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="public/images/modal.png" class="modal-img" alt="modal">
+      </div>
+    </div>
     <div class="header">
       <!-- <div class="header-main header-marquee header-spacing">
             <div class="header-main__bounce">
@@ -245,40 +251,40 @@
                               Kinh doanh
                             </option>
                             <option class="option-items " value="10">
-                              Tư vấn / CSKH
+                              Tư vấn 
                             </option>
                             <option class="option-items " value="38">
                               Kiểm toán
                             </option>
                             <option class="option-items " value="24">
-                              Kinh doanh
+                              Du lịch
                             </option>
                             <option class="option-items " value="10">
-                              Tư vấn / CSKH
+                              CNTT Phần mềm
                             </option>
                             <option class="option-items " value="38">
-                              Kiểm toán
+                              Giải trí
                             </option>
                             <option class="option-items " value="24">
-                              Kinh doanh
+                              Thực phẩm
                             </option>
                             <option class="option-items " value="10">
-                              Tư vấn / CSKH
+                              Điện tử
                             </option>
                             <option class="option-items " value="38">
-                              Kiểm toán
+                              Giải trí 
                             </option>
                             <option class="option-items " value="24">
-                              Kinh doanh
+                              Bảo vệ
                             </option>
                             <option class="option-items " value="10">
-                              Tư vấn / CSKH
+                              Hóa học
                             </option>
                             <option class="option-items " value="38">
-                              Kiểm toán
+                              Bất động sản
                             </option>
                             <option class="option-items " value="56">
-                              Khác
+                              Làm đẹp
                             </option>
                           </select>
                         </div>
@@ -425,10 +431,33 @@
         </div>
       </div>
     </div>
-    <div class=""></div>
+    <div class="employer">
+      <div class="container-small">
+        <h3>Bản tin hàng đầu</h3>
+        <div class="employer-list">
+          <div class="employer-item">
+            <img src="./public/images/slider/cong-ty-cho-thue-tai-chinh-trach-nhiem-huu-han-mot-thanh-vien-quoc-te-chailease4251685434694.jpg" alt="thông báo việc làm">
+          </div>
+          <div class="employer-item">
+            <img src="public/images/slider/cong-ty-tnhh-mot-thanh-vien-hung-phuc9491657008456.jpg" alt="thông báo ">
+          </div>
+          <div class="employer-item">
+            <img src="public/images/slider/cong-ty-tnhh-quoc-te-tri-viet7261651116666.jpg" alt="thông báo">
+          </div>
+        </div>
+      </div>
+      
+    </div>
   </body>
   <script src="public/js/jquery.js"></script>
   <script src="public/js/select2.js"></script>
   <script src="./public/js/main.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</html>
+  <script>
+    $('.employer-list').slick({
+            arrows: true,
+            prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
+            nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>"
+    });
+  </script>
+  </html>
