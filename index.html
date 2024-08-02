@@ -17,6 +17,9 @@
           <span class="close">&times;</span>
           <img src="public/images/modal.png" class="modal-img" alt="modal">
     </div>
+    <a href="#" class="button-scroll">
+      <i class="bi bi-chevron-up"></i>
+    </a>
     <div class="header">
       <!-- <div class="header-main header-marquee header-spacing">
             <div class="header-main__bounce">
@@ -236,9 +239,10 @@
               <div class="container">
                 <div class="search-inner">
                   <div class="search-inner__list">
-                      <div class="search-group search-group_float">
-                        <div
-                          class="form-group search-group_float__item position-relative mb-0 noidung"
+                      <div class="search-inner__search search-inner__item  search-group_float">
+                        <div class="search-inner__searchCol">
+                          <div
+                          class="form-group search-group_float__item noidung"
                         >
                           <input
                             type="text"
@@ -248,8 +252,10 @@
                             id="searchStr"
                           />
                         </div>
-                        <div
-                          class="form-group search-group_float__item search-group_float__select position-relative mb-0 nganhnghe"
+                        </div>
+                        <div class="search-inner__searchCol">
+                          <div
+                          class="form-group  search-group_float__item search-group_float__select nganhnghe"
                         >
                           <select
                             class="form-control select2 vieclam-select2 rounded-0 transition-03"
@@ -304,45 +310,57 @@
                             </option>
                           </select>
                         </div>
-                      </div>
-                      <div class="search-inner__item">
-                          <div class="search-group">
-                            <div
-                              class="form-group search-group_float__item position-relative mb-0 diadiem"
-                            >
-                              <select
-                                class="form-control select2 vieclam-select2 rounded-0 transition-03"
-                                name=""
-                                multiple=""
-                                data-wrapper=""
-                                id="searchDD"
-                                data-placeholder="Lọc theo địa điểm"
-                                size="1"
-                              >
-                                <option class="option-items " value="-1">
-                                  Địa điểm - Tất cả
-                                </option>
-                                <option class="option-items " value="1">
-                                  Cần Thơ
-                                </option>
-                                <option class="option-items " value="2">
-                                  Vĩnh Long
-                                </option>
-                                <option class="option-items " value="8">
-                                  Hậu Giang
-                                </option>
-                                <option class="option-items " value="71">
-                                  Khác
-                                </option>
-                              </select>
-                            </div>
                         </div>
-                        <button type="submit" class="form-control btn-find">
-                          Tìm kiếm
-                        </button>
                       </div>
+                      <div class="search-inner__filter search-inner__item filter">
+                          <div class="search-inner__filterCol">
+                            <div
+                            class="form-group search-group_float__item diadiem"
+                          >
+                            <select
+                              class="form-control vieclam-select2 select2"
+                              name=""
+                              multiple=""
+                              data-wrapper=""
+                              id="searchDD"
+                              data-placeholder="Lọc theo địa điểm"
+                              size="1"
+                            >
+                              <option class="option-items " value="-1">
+                                Địa điểm - Tất cả
+                              </option>
+                              <option class="option-items " value="1">
+                                Cần Thơ
+                              </option>
+                              <option class="option-items " value="2">
+                                Vĩnh Long
+                              </option>
+                              <option class="option-items " value="8">
+                                Hậu Giang
+                              </option>
+                              <option class="option-items " value="71">
+                                Khác
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="search-inner__filterCol">
+                          <button type="submit" class="form-control btn-find hidden-sm">
+                            Tìm kiếm
+                          </button>
+                        </div>
+                      </div>
+                      <div class="search-inner__item btn-filterSearch">
+                        <div class="form-control btn-find btn-filter show-sm" id="btn-filter">
+                          <i class="bi bi-funnel"></i> Lọc nâng cao
+                        </div>              
+                        <div class="form-control btn-find show-sm">
+                          <i class="bi bi-search"></i> Tìm kiếm
+                        </div>            
+                      </div>
+                      
                   </div>
-                  <div class="collapse " id="collapseExample">
+                  <div  class="collapse-filter">
                     <div class="search-collapse">
                       <div class="collapse-list">
                           <div class="search-group">
