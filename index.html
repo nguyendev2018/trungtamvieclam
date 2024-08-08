@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TRUNG TÂM VIỆC LÀM BÌNH DƯƠNG</title>
     <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./public/style/search.css">
     <link rel="stylesheet" href="./public/style/main.css" />
     <link rel="stylesheet" href="./public/js/main.js" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
   <body>
     <div class="overlay-black"></div>
     <div  class="modal" id="myModal">
-          <span class="close">&times;</span>
+          <span class="close"><i class="bi bi-x"></i></span>
           <img src="public/images/modal.png" class="modal-img" alt="modal">
     </div>
     <a href="#" class="button-scroll">
@@ -345,7 +347,7 @@
                           </div>
                         </div>
                         <div class="search-inner__filterCol">
-                          <button type="submit" class="form-control btn-find hidden-sm">
+                          <button type="submit" class="form-control btn-find btn-primary hidden-sm">
                             Tìm kiếm
                           </button>
                         </div>
@@ -467,7 +469,7 @@
     </div>
     <div class="employer">
       <div class="container-small">
-        <h3>Bản tin hàng đầu</h3>
+        <h3 class="title">Bản tin hàng đầu</h3>
         <div class="employer-list">
           <div class="employer-item">
             <img src="./public/images/slider/cong-ty-cho-thue-tai-chinh-trach-nhiem-huu-han-mot-thanh-vien-quoc-te-chailease4251685434694.jpg" alt="thông báo việc làm">
@@ -482,16 +484,476 @@
       </div>
       
     </div>
-  </body>
-  <script src="public/js/jquery.js"></script>
-  <script src="public/js/select2.js"></script>
-  <script src="./public/js/main.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
+    <div class="hot">
+      <div class="container-small">
+        <div class="block-title">
+          <h3 class="title">Bản tin hot</h3>
+        </div>
+        <div class="hot-block">
+          <div class="hot-main hot-item">
+            <div class="hot-list">
+              <a class="hot-main--item">
+                <img src="./public/images/hot-news/1.jpg" alt="">
+                <h4>THÔNG BÁO VỀ VIỆC LỄ TANG TỔNG BÍ THƯ BAN CHẤP HÀNH TRUNG ƯƠNG ĐẢNG NGUYỄN PHÚ TRỌNG</h4>
+                <p>
+                  Trung tâm dịch vụ việc làm Bình Dương Tuyển dung - Giới thiệu việc làm "miễn phí" Giải quyết chế độ BHTN - Đào tạo nghề "miễn phí" website: vieclambinhduong.vn - Điện thoại: 02743.899.019 - 02743.822.870 - Email: phonggtvlbd@gmail.com
+              </p>
+              </a>
+            </div>
+            <div class="hot-list--small">
+                <a href="#" class="small-item">
+                  <div class="small-item__img">
+                    <img src="./public/images/hot-news/news-small/1.png" alt="news-small">
+                  </div>
+                  <p>Ngày hội việc làm 2024 - Hành trang mới, tương lai mới</p>
+                </a>
+                <a href="#" class="small-item">
+                  <div class="small-item__img">
+                    <img src="./public/images/hot-news/news-small/1.png" alt="news-small">
+                  </div>
+                  <p>Ngày hội việc làm 2024 - Hành trang mới, tương lai mới</p>
+                </a>
+                <a href="#" class="small-item">
+                  <div class="small-item__img">
+                    <img src="./public/images/hot-news/news-small/1.png" alt="news-small">
+                  </div>
+                  <p>Ngày hội việc làm 2024 - Hành trang mới, tương lai mới</p>
+                </a>
+                <a href="#" class="small-item">
+                  <div class="small-item__img">
+                    <img src="./public/images/hot-news/news-small/1.png" alt="news-small">
+                  </div>
+                  <p>Ngày hội việc làm 2024 - Hành trang mới, tương lai mới</p>
+                </a>
+
+                <a href="#" class="small-item">
+                  <div class="small-item__img">
+                    <img src="./public/images/hot-news/news-small/1.png" alt="news-small">
+                  </div>
+                  <p>Ngày hội việc làm 2024 - Hành trang mới, tương lai mới</p>
+                </a>
+                <a href="#" class="small-item">
+                  <div class="small-item__img">
+                    <img src="./public/images/hot-news/news-small/1.png" alt="news-small">
+                  </div>
+                  <p>Ngày hội việc làm 2024 - Hành trang mới, tương lai mới</p>
+                </a>
+                
+            </div>
+          </div>
+          <div class="hot-news hot-item">
+            <h4>Tin mới</h4>
+            <div class="hot-news--list">
+              <a href="#" class="hot-news--item">
+                <div class="news-item__img">
+                  <img src="public/images/hot-news/news/1.png" alt="news-1">
+                </div>
+                <div class="news-item__content">
+                  <h5>Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</h5>
+                </div>
+              </a>
+              <a href="#" class="hot-news--item">
+                <div class="news-item__img">
+                  <img src="public/images/hot-news/news/1.png" alt="news-1">
+                </div>
+                <div class="news-item__content">
+                  <h5>Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</h5>
+                </div>
+              </a>
+              <a href="#" class="hot-news--item">
+                <div class="news-item__img">
+                  <img src="public/images/hot-news/news/1.png" alt="news-1">
+                </div>
+                <div class="news-item__content">
+                  <h5>Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</h5>
+                </div>
+              </a>
+
+              <a href="#" class="hot-news--item">
+                <div class="news-item__img">
+                  <img src="public/images/hot-news/news/1.png" alt="news-1">
+                </div>
+                <div class="news-item__content">
+                  <h5>Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</h5>
+                </div>
+              </a>
+              <a href="#" class="hot-news--item">
+                <div class="news-item__img">
+                  <img src="public/images/hot-news/news/1.png" alt="news-1">
+                </div>
+                <div class="news-item__content">
+                  <h5>Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</h5>
+                </div>
+              </a>
+              <a href="#" class="hot-news--item">
+                <div class="news-item__img">
+                  <img src="public/images/hot-news/news/1.png" alt="news-1">
+                </div>
+                <div class="news-item__content">
+                  <h5>Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</h5>
+                </div>
+              </a>
+              <a href="#" class="hot-news--item">
+                <div class="news-item__img">
+                  <img src="public/images/hot-news/news/1.png" alt="news-1">
+                </div>
+                <div class="news-item__content">
+                  <h5>Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</h5>
+                </div>
+              </a>
+              <a href="#" class="hot-news--item">
+                <div class="news-item__img">
+                  <img src="public/images/hot-news/news/1.png" alt="news-1">
+                </div>
+                <div class="news-item__content">
+                  <h5>Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</h5>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="business">
+      <div class="container-small">
+        <div class="block-title">
+          <h3 class="title">Doanh Nghiệp Tiêu Biểu</h3>
+        </div>
+        <div class="business-list">
+          <div class="business-item"> 
+            <div class="business-img">
+              <img src="public/images/" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="job">
+      <div class="container-small">
+        <div class="star block-title p-job">
+          <i class="bi bi-star-fill"></i>  Việc làm tốt nhất
+        </div>
+        <div class="card-body">
+         
+          <div class="card-body--header p-job">
+              <a href="#" class="item-avatar">
+                <img src="./public/images/job/1.jpg" alt="">
+              </a>
+                <div class="item-content--title">
+                  <a href="#" title="TỦ NHỰA ĐÀI LOAN CAO CẤP SONG NGÂN"> 
+                    TỦ NHỰA ĐÀI LOAN CAO CẤP SONG NGÂN
+                  </a>
+                  <i>
+                    285 Phạm Hùng, P. Lê Bình, Q. Cái Răng, TP. Cần Thơ
+                  </i>
+                  <div class="item-content--info">
+                    <div>
+                      <i class="bi bi-people-fill"></i>
+                      <span>10-25</span>
+                    </div>
+                    <div>
+                      <i class="bi bi-building"></i>
+                      <span>Doanh nghiệp, tư nhân</span>
+                    </div>
+                    <div>
+                      <i class="bi bi-briefcase"></i>
+                      <span>Kinh doanh dịch vụ</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card-body--info ">
+              <div class="card-body--list p-job--content">
+                <div class="item-left">
+                  <span title="Kế toán tổng hợp">Kế toán tổng hợp</span>
+                </div>
+                <div class="item-right">
+                  <div>
+                    <i class="bi bi-currency-dollar"></i>
+                    <span title="Mức lương: Thỏa Thuận">Thỏa thuận</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-mortarboard"></i>
+                    <span title="Cao Đẳng">Cao Đẳng</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-mortarboard"></i>
+                    <span title="Yêu cầu kinh nghiệm">Không yêu cầu kinh nghiệm</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-clock"></i>
+                  <span title="Hạn nộp hồ sơ 10/8">10/8</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body--list p-job--content">
+                <div class="item-left">
+                  <span title="Kế toán tổng hợp">Kế toán tổng hợp</span>
+                </div>
+                <div class="item-right">
+                  <div>
+                    <i class="bi bi-currency-dollar"></i>
+                    <span title="Mức lương: Thỏa Thuận">Thỏa thuận</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-mortarboard"></i>
+                    <span title="Cao Đẳng">Cao Đẳng</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-mortarboard"></i>
+                    <span title="Yêu cầu kinh nghiệm">Không yêu cầu kinh nghiệm</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-clock"></i>
+                  <span title="Hạn nộp hồ sơ 10/8">10/8</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body--list p-job--content">
+                <div class="item-left">
+                  <span title="Kế toán tổng hợp">Kế toán tổng hợp</span>
+                </div>
+                <div class="item-right">
+                  <div>
+                    <i class="bi bi-currency-dollar"></i>
+                    <span title="Mức lương: Thỏa Thuận">Thỏa thuận</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-mortarboard"></i>
+                    <span title="Cao Đẳng">Cao Đẳng</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-mortarboard"></i>
+                    <span title="Yêu cầu kinh nghiệm">Không yêu cầu kinh nghiệm</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-clock"></i>
+                  <span title="Hạn nộp hồ sơ 10/8">10/8</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body--list p-job--content">
+                <div class="item-left">
+                  <span title="Kế toán tổng hợp">Kế toán tổng hợp</span>
+                </div>
+                <div class="item-right">
+                  <div>
+                    <i class="bi bi-currency-dollar"></i>
+                    <span title="Mức lương: Thỏa Thuận">Thỏa thuận</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-mortarboard"></i>
+                    <span title="Cao Đẳng">Cao Đẳng</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-mortarboard"></i>
+                    <span title="Yêu cầu kinh nghiệm">Không yêu cầu kinh nghiệm</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-clock"></i>
+                  <span title="Hạn nộp hồ sơ 10/8">10/8</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="services">
+      <div class="container-small">
+        <div class="services-list">
+         <div class="services-col">
+          <a href="#" class="services-item">
+            <i class="bi bi-mortarboard"></i>
+            <span>Khóa Học Tập Huấn</span>
+          </a>
+         </div>
+         <div class="services-col">
+          <a href="#" class="services-item">
+            <i class="bi bi-person-lines-fill"></i>
+            <span>Tuyển Dụng Theo Nghị Định 70/2023</span>
+          </a>
+         </div>
+         <div class="services-col">
+          <a href="#" class="services-item">
+            <i class="bi bi-clipboard2-minus"></i>
+            <span>Hướng Dẫn Tuyển Dụng Nghị Định 70/2023</span>
+          </a>
+         </div>
+         <div class="services-col">
+          <a href="#" class="services-item">
+            <i class="bi bi-download"></i>
+            <span>Tải biểu mẫu</span>
+          </a>
+         </div>
+
+          
+      
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="contact">
+      <div class="container-small">
+        <div class="block-title">
+          <h3 class="title">Thông tin liên hệ</h3>
+        </div>
+        <div class="contact-block">
+          <div class="contact-item contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.017988141494!2d106.6926263745195!3d10.962013555744184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d1179d28bc51%3A0xb8eca68c37395554!2sEmployment%20Service%20Center%20Binh%20Duong!5e0!3m2!1sen!2s!4v1722938756362!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="contact-item contact-form">
+            <form action="">
+              <div class="form-group">
+                <label for="firstName">Họ và tên</label>
+                <input type="text" id="firstName" class="form-control" placeholder="Mời bạn nhập vào họ và tên">  
+              </div>  
+              <div class="form-group">
+                <label for="number">Số điện thoại</label>
+                <input id="number" type="number" class="form-control" placeholder="Mời bạn nhập vào số điện thoại">   
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" class="form-control" placeholder="Mời bạn nhập vào số điện thoại">   
+              </div>
+              <div class="form-group">
+                <label for="content">Nội dung</label>
+                <textarea name="content" id="content" rows="5" class="form-control" placeholder="Mời bạn nhập vào nội dung"></textarea>
+              </div>
+              <button class="btn-send btn-primary" >Gửi Email</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="footer ">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-item first">
+            <h4>Về chúng tôi</h4>
+            <a href="#"><img src="public/images/LogoTT.png" alt=""></a>
+            <p>Trung tâm dịch vụ việc làm Bình Dương Tuyển dụng Giới thiệu việc làm "miễn phí" và Giải quyết chế độ BHTN Đào tạo nghề "miễn phí"</p>
+          </div>
+            <div class="footer-item second">
+              <h4>Liên hệ với chi nhánh</h4>
+              <ul>
+                <li><i class="bi bi-geo"></i><span> Trụ sở chính :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019">(0274) 3.899.019</a></li>
+              </ul>
+              <ul>
+                <li><i class="bi bi-geo"></i><span> Chi nhánh Dĩ An :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019">(0274) 3.899.019</a></li>
+              </ul>
+              <ul>
+                <li><i class="bi bi-geo"></i><span> Chi nhánh Tân Định :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019">(0274) 3.899.019</a></li>
+              </ul>
+              <ul>
+                <li><i class="bi bi-geo"></i><span> Chi nhánh Tân Uyên :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019">(0274) 3.899.019</a></li>
+              </ul>
+          
+              
+            </div>
+            <div class="footer-item third">
+              <h4>Liên kết website</h4>
+              <div class="footer-item--website">
+                <a href="#" class="img-col">
+                  <img src="public/images/footer/1.png" alt="liên kết website">
+                </a>
+                <a href="#" class="img-col">
+                  <img src="public/images/footer/1.png" alt="liên kết website">
+                </a>
+                <a href="#" class="img-col">
+                  <img src="public/images/footer/1.png" alt="liên kết website">
+                </a>
+                <a href="#" class="img-col">
+                  <img src="public/images/footer/1.png" alt="liên kết website">
+                </a>
+                <a href="#" class="img-col">
+                  <img src="public/images/footer/1.png" alt="liên kết website">
+                </a>
+                <a href="#" class="img-col">
+                  <img src="public/images/footer/1.png" alt="liên kết website">
+                </a>
+              </div>
+              <div class="footer-item--data">
+                <div class="data-col">
+                  <i class="bi bi-person-fill"></i>
+                  <span>Đang Tham Gia : 18550</span>
+                </div>
+                <div class="data-col right">
+                  <i class="bi bi-calendar-event"></i>
+                  <span>Hôm nay : 18550</span>
+                </div>
+                <div class="data-col">
+                  <i class="bi bi-calendar"></i>
+                  <span>Tổng số : 18550</span>
+                </div>
+                <div class="data-col right">
+                  <i class="bi bi-card-list"></i>
+                  <span>Hôm qua : 18550</span>
+                </div>
+              </div>
+            </div>
+            <div class="footer-item four">
+              <h4>Mạng xã hội</h4>
+             <div class="social-col">
+              <a href="#" class="icon-facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="" class="icon-youtube">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="" class="icon-zalo">
+                <img src="./public/images/footer/vector-zalo.svg" alt="">
+              </a>
+              <a href="#" class="icon-android">
+                <i class="bi bi-android2"></i>
+              </a>
+              <a href="#" class="icon-apple">
+                <i class="bi bi-apple"></i>
+              </a>
+             </div>
+            </div>
+  <script src="public/js/library/jquery.js"></script>
+  <script src="public/js/library/select2.js"></script>
+  <script src="public/js/main.js"></script>
+  <script src="public/js/library/slick.js"></script>
+<script>
     $('.employer-list').slick({
             arrows: true,
+            autoplay : true,
             prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
             nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>"
     });
+    // $('.hot-list').slick({
+    //         arrows: true,
+    //         autoplay : true,
+    //         prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
+    //         nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>"
+    // });
+    $('.hot-list--small').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay : true,
+            prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
+            nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>",
+            responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      }
+    },{
+      breakpoint: 552,
+      settings: {
+        slidesToShow: 2,
+      }
+    }]
+    });
+
   </script>
   </html>
