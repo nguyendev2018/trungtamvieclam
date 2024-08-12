@@ -3,6 +3,8 @@ const body = document.querySelector("body");
 const overlayBlack = document.querySelector(".overlay-black");
 const iconClose = document.querySelector(".bi.bi-x-lg");
 const menuHeader = document.querySelector(".header-bottom");
+const videoList = document.querySelectorAll(".video-small");
+const iframe = document.querySelector(".video iframe");
 barsMenu.addEventListener("click", () => {
   barsMenu.classList.toggle("active");
   body.classList.toggle("no-scroll");
@@ -58,6 +60,20 @@ function closeMenuMobile() {
 //     menuHeader.classList.remove("header-bottom__scroll");
 //   }
 // });
+videoList.forEach(video => {
+  video.onclick = () =>{
+    videoList.forEach(vid => {
+      vid.classList.remove('show');
+    });
+    video.classList.add('show');
+    if(video.classList.contains('show')){
+      console.log(video.children[0].children[0]);
+      
+      let src = `https://www.youtube.com/embed/${video.children[0].children[0].getAttribute('data-item')}?si=3Ez0x-ZeRH9Fvr4D`;
+      iframe.src = src;
+    }
+  }
+});
 $(document).ready(function () {
   $("select.select2").each(function () {
     let elm = "";
