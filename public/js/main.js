@@ -5,10 +5,13 @@ const iconClose = document.querySelector(".bi.bi-x-lg");
 const menuHeader = document.querySelector(".header-bottom");
 const videoList = document.querySelectorAll(".video-small");
 const iframe = document.querySelector(".video iframe");
+const buttonsMore = document.querySelectorAll(".card-body--more");
+const viewsMore = document.querySelectorAll(".card-body--list.view-more")
 barsMenu.addEventListener("click", () => {
   barsMenu.classList.toggle("active");
   body.classList.toggle("no-scroll");
   overlayBlack.classList.add("active");
+  
 });
 iconClose.addEventListener("click", () => {
   closeMenuMobile();
@@ -52,6 +55,12 @@ function closeMenuMobile() {
   barsMenu.classList.remove("active");
   overlayBlack.classList.remove("active");
 }
+buttonsMore.forEach((btnMore, index) => {
+  btnMore.addEventListener("click", () => {
+    viewsMore[index].classList.toggle("show");
+    btnMore.classList.toggle("show");
+  });
+});
 // scroll header
 // document.addEventListener("scroll", () => {
 //   if (window.scrollY > 400) {
@@ -61,15 +70,14 @@ function closeMenuMobile() {
 //   }
 // });
 videoList.forEach(video => {
+  
   video.onclick = () =>{
     videoList.forEach(vid => {
       vid.classList.remove('show');
     });
     video.classList.add('show');
     if(video.classList.contains('show')){
-      console.log(video.children[0].children[0]);
-      
-      let src = `https://www.youtube.com/embed/${video.children[0].children[0].getAttribute('data-item')}?si=3Ez0x-ZeRH9Fvr4D`;
+      let src = `https://www.youtube.com/embed/${video.children[0].children[1].getAttribute('data-item')}?si=3Ez0x-ZeRH9Fvr4D`;
       iframe.src = src;
     }
   }
